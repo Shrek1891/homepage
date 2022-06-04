@@ -13,7 +13,7 @@ body {
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --text-decoration-color: #42c5f5;
 }
 
 .container {
@@ -263,4 +263,40 @@ body {
 }
 
 
+.contact_info_container a {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 110%;
+    height: 110%;
+}
 
+.contact-info__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info__item {
+    animation: pulsing 3s infinite;
+}
+
+h3 {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.38);
+
+}
+
+@keyframes pulsing {
+    0% {
+     
+      transform: scale(0.8, 0.8)
+    }
+    50% {
+      
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      
+      transform: scale(0.8, 0.8);
+    }
+  }
+  
+ 
