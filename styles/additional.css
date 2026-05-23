@@ -1,0 +1,57 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 110vh;
+}
+
+.container {
+    position: sticky;
+    flex: calc(100vw / 10) 1 1;
+    background-size: cover;
+    filter: saturate(90%);
+    transition: 1s;
+    overflow: hidden;
+}
+
+.container .resume__block {
+    opacity: 0;
+}
+
+.container:hover {
+    opacity: 1;
+    cursor: pointer;
+    flex-basis: 40%;
+    height: 100%;
+    background-size: cover;
+    filter: saturate(120%);
+    @media (min-width: 1024px) {
+
+        flex-basis: 75%;
+    }
+}
+
+.container:hover .resume__block {
+    opacity: 1;
+}
+
+.change {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    text-decoration-line: underline;
+    text-decoration-color: var(--text-decoration-color);
+    text-decoration-style: wavy;
+    text-decoration-thickness: 3px;
+    font-size: 1.4rem;
+    text-wrap: balance;
+    font-style: italic;
+}
+
+.container:hover .change {
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+
